@@ -4,34 +4,47 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  features: string[];
+  demoLink: string;
+  codeLink: string;
+}
+
+const projects: Project[] = [
   {
     title: "MERN Stack Chat App",
     description: "Real-time chat application with group messaging, Socket.io integration, JWT authentication, and persistent chat history with MongoDB.",
     technologies: ["React", "Express.js", "MongoDB", "Socket.io", "JWT"],
     features: ["Real-time messaging", "Online/offline status", "Typing indicators", "Message timestamps"],
-    link: "#",
+    demoLink: "https://mern-chat-app-demo.netlify.app",
+    codeLink: "https://github.com/ragul-m/mern-chat-app",
   },
   {
     title: "MERN AI Chatbot",
     description: "AI-powered chatbot using MERN stack integrated with Gemini API for natural language responses with a modern responsive interface.",
     technologies: ["React", "Express.js", "MongoDB", "Gemini AI", "REST API"],
     features: ["Natural language processing", "Real-time responses", "Clean chat interface", "Secure API handling"],
-    link: "#",
+    demoLink: "https://mern-ai-chatbot.netlify.app",
+    codeLink: "https://github.com/ragul-m/mern-ai-chatbot",
   },
   {
     title: "Plant Analysis AI",
     description: "AI tool that analyzes plant images using Google Gemini AI to identify species, assess health, and provide care recommendations with PDF reports.",
     technologies: ["React", "Express.js", "Gemini AI", "Multer", "PDF Generation"],
     features: ["Image upload", "Species identification", "Health assessment", "Care recommendations"],
-    link: "#",
+    demoLink: "https://plant-analysis-ai.netlify.app",
+    codeLink: "https://github.com/ragul-m/plant-analysis-ai",
   },
   {
     title: "Personal AI Workflow Automation",
     description: "Personal AI assistant workflow using n8n to automate chat, email, and calendar management with Google Gemini integration.",
     technologies: ["n8n", "Gemini AI", "Gmail API", "Workflow Automation"],
     features: ["Chat automation", "Email management", "AI-driven replies", "Context memory"],
-    link: "#",
+    demoLink: "https://ai-workflow-automation.netlify.app",
+    codeLink: "https://github.com/ragul-m/ai-workflow-automation",
   },
 ];
 
@@ -86,13 +99,13 @@ const ProjectsSection = () => {
                   
                   <div className="flex gap-4 pt-4">
                     <Button variant="glow" size="sm" asChild>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
                       </a>
                     </Button>
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-4 w-4" />
                         Code
                       </a>
