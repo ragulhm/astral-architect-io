@@ -74,7 +74,7 @@ const ProjectsSection = () => {
               whileHover={{ scale: 1.05, rotateY: 5 }}
               className="perspective-1000"
             >
-              <Card className="h-full bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary transition-all duration-300 glow-effect">
+              <Card className="h-full card-elevated border-primary/20 hover:border-primary/50 transition-all duration-500 group">
                 <CardHeader>
                   <CardTitle className="text-2xl text-foreground">{project.title}</CardTitle>
                   <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
@@ -82,7 +82,7 @@ const ProjectsSection = () => {
                 <CardContent className="space-y-4">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
-                      <Badge key={i} variant="secondary" className="bg-primary/20 text-accent">
+                      <Badge key={i} variant="secondary" className="bg-primary/10 text-accent border border-primary/20 hover:bg-primary/20 transition-colors">
                         {tech}
                       </Badge>
                     ))}
