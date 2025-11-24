@@ -18,34 +18,51 @@ const projects: Project[] = [
     title: "MERN Stack Chat App",
     description: "Real-time chat application with group messaging, Socket.io integration, JWT authentication, and persistent chat history with MongoDB.",
     technologies: ["React", "Express.js", "MongoDB", "Socket.io", "JWT"],
-    features: ["Real-time messaging", "Online/offline status", "Typing indicators", "Message timestamps"],
-    demoLink: "https://mern-chat-app-demo.netlify.app",
-    codeLink: "https://github.com/ragul-m/mern-chat-app",
+    features: ["Real-time messaging", "Online/offline status", "Message timestamps"],
+    demoLink: "https://hm-chatapp.netlify.app/",
+    codeLink: "https://github.com/ragulhm/Chat_app-Backend",
+  },
+  {
+    title: " Eduplanner – LLM-Based Multi-Agent System",
+    description: "Developed an AI-driven lesson planning system using multi-agent LLM architecture (Evaluator,Optimizer, Analyst agents)to generate, evaluate, and refine lesson plans.",
+    technologies: ["React", "Python", "FastAPI ", "Ollama", "Cloud LLMs"],
+    features: ["Multi-Agent AI System", "Intelligent Lesson Generation", "Adaptive & Personalized Learning", "Hybrid LLM Processing"],
+    demoLink: "",
+    codeLink: "https://github.com/ragulhm/EDU-Planner-",
   },
   {
     title: "MERN AI Chatbot",
     description: "AI-powered chatbot using MERN stack integrated with Gemini API for natural language responses with a modern responsive interface.",
     technologies: ["React", "Express.js", "MongoDB", "Gemini AI", "REST API"],
     features: ["Natural language processing", "Real-time responses", "Clean chat interface", "Secure API handling"],
-    demoLink: "https://mern-ai-chatbot.netlify.app",
-    codeLink: "https://github.com/ragul-m/mern-ai-chatbot",
+    demoLink: "",
+    codeLink: "https://github.com/ragulhm/Mern-chat-bot_Gemini",
   },
   {
     title: "Plant Analysis AI",
     description: "AI tool that analyzes plant images using Google Gemini AI to identify species, assess health, and provide care recommendations with PDF reports.",
     technologies: ["React", "Express.js", "Gemini AI", "Multer", "PDF Generation"],
     features: ["Image upload", "Species identification", "Health assessment", "Care recommendations"],
-    demoLink: "https://plant-analysis-ai.netlify.app",
-    codeLink: "https://github.com/ragul-m/plant-analysis-ai",
+    demoLink: "https://plant-analysis-tool-gemini-2-5-flask.onrender.com/",
+    codeLink: "https://github.com/ragulhm/Plant-Analysis_tool__Gemini",
   },
   {
     title: "Personal AI Workflow Automation",
     description: "Personal AI assistant workflow using n8n to automate chat, email, and calendar management with Google Gemini integration.",
     technologies: ["n8n", "Gemini AI", "Gmail API", "Workflow Automation"],
     features: ["Chat automation", "Email management", "AI-driven replies", "Context memory"],
-    demoLink: "https://ai-workflow-automation.netlify.app",
-    codeLink: "https://github.com/ragul-m/ai-workflow-automation",
+    demoLink: "",
+    codeLink: "https://github.com/ragulhm/n8n-Personal-ai-workflow-",
   },
+  {
+    title: "Cyber Security-Portfolio",
+    description: "This portfolio is made by Vibe Coding, showcasing my work, skills, and projects. Built using modern web technologies and deployed on Firebase.",
+    technologies: ["React", "Framer", "TypeScript", "Firebase","Replit.Ai","Lovable.Ai"],
+    features: ["Responsive Design", "Modern UI", "Project Showcase"],
+    demoLink: "https://ragul-hitman-av.web.app/",
+    codeLink: "https://github.com/ragulhm/nebula-dev-hub",
+  },
+  
 ];
 
 const ProjectsSection = () => {
@@ -74,7 +91,7 @@ const ProjectsSection = () => {
               whileHover={{ scale: 1.05, rotateY: 5 }}
               className="perspective-1000"
             >
-              <Card className="h-full card-elevated border-primary/20 hover:border-primary/50 transition-all duration-500 group">
+              <Card className="h-full bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary transition-all duration-300 glow-effect">
                 <CardHeader>
                   <CardTitle className="text-2xl text-foreground">{project.title}</CardTitle>
                   <CardDescription className="text-muted-foreground">{project.description}</CardDescription>
@@ -82,7 +99,7 @@ const ProjectsSection = () => {
                 <CardContent className="space-y-4">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
-                      <Badge key={i} variant="secondary" className="bg-primary/10 text-accent border border-primary/20 hover:bg-primary/20 transition-colors">
+                      <Badge key={i} variant="secondary" className="bg-primary/20 text-accent">
                         {tech}
                       </Badge>
                     ))}

@@ -20,7 +20,7 @@ const Index = () => {
       
       <footer className="relative z-10 py-8 text-center border-t border-primary/20">
         <p className="text-muted-foreground">
-          © 2025 Ragul M. Built with React, Framer Motion & Three.js
+          © 2025 Ragul M
         </p>
       </footer>
     </div>

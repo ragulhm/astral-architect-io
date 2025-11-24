@@ -29,8 +29,8 @@ const ContactSection = () => {
   const socialLinks = [
     { icon: Mail, label: "Email", href: "mailto:Ragul.mr3391@gmail.com" },
     { icon: Phone, label: "Phone", href: "tel:+918438173391" },
-    { icon: Github, label: "GitHub", href: "https://github.com/RAGUL-M" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/ragul-m" },
+    { icon: Github, label: "GitHub", href: "https://github.com/ragulhm" },
+    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/ragul-m-965251252/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
   ];
 
   return (
@@ -129,7 +129,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-bold mb-4 text-foreground">Coding Profiles</h3>
               <div className="space-y-4">
                 <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="https://github.com/RAGUL-M" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/ragulhm" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2" />
                     GitHub Profile
                   </a>
