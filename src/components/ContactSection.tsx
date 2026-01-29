@@ -124,26 +124,6 @@ const ContactSection = () => {
                 })}
               </div>
             </Card>
-
-            <Card className="p-8 bg-card/50 backdrop-blur-sm border-primary/20 glow-effect">
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Coding Profiles</h3>
-              <div className="space-y-4">
-                <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="https://github.com/ragulhm" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2" />
-                    GitHub Profile
-                  </a>
-                </Button>
-                <Button variant="outline" className="w-full justify-start" asChild>
-                  <a href="https://tryhackme.com" target="_blank" rel="noopener noreferrer">
-                    <svg className="mr-2 w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
-                    </svg>
-                    TryHackMe Profile
-                  </a>
-                </Button>
-              </div>
-            </Card>
           </motion.div>
         </div>
       </div>

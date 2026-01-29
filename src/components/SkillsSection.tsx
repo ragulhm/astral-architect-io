@@ -3,16 +3,18 @@ import { Card } from "@/components/ui/card";
 import { Code2, Database, Wrench, Award } from "lucide-react";
 
 const skills = {
-  languages: ["JavaScript", "Python", "HTML/CSS", "PHP", "MongoDB", "MySQL"],
-  frameworks: ["React", "Express.js", "Flask", "Node.js"],
-  tools: ["Git", "Docker", "VS Code", "Linux/Ubuntu", "IntelliJ", "Eclipse"],
-  certifications: ["Pre Security (TryHackMe)", "Cybersecurity Essentials (CISCO)"],
+  languages: ["Java","JavaScript", "Python", "HTML/CSS"],
+  Database :["MongoDB", "MySQL","Supabase","AWS","Render","Docker"],
+  frameworks: ["React", "Express", "Flask", "Node.js"],
+  tools: ["Git", "Postman", "VS Code", "Linux/Ubuntu", "IntelliJ", "Eclipse"],
+  certifications: ["Pre Security (TryHackMe)", "Cybersecurity Essentials (CISCO)","Building Effective Agentic Systems with Generative AI"],
 };
 
 const SkillsSection = () => {
   const skillCategories = [
     { icon: Code2, title: "Languages", items: skills.languages, color: "from-primary to-accent" },
     { icon: Database, title: "Frameworks", items: skills.frameworks, color: "from-accent to-primary" },
+    { icon: Database, title: "Database & Cloud", items: skills.Database, color: "from-accent to-primary" },
     { icon: Wrench, title: "Developer Tools", items: skills.tools, color: "from-primary to-accent" },
     { icon: Award, title: "Certifications", items: skills.certifications, color: "from-accent to-primary" },
   ];
