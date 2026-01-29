@@ -35,7 +35,7 @@ const projects: Project[] = [
     description: "AI-powered chatbot using MERN stack integrated with Gemini API for natural language responses with a modern responsive interface.",
     technologies: ["React", "Express.js", "MongoDB", "Gemini AI", "REST API"],
     features: ["Natural language processing", "Real-time responses", "Clean chat interface", "Secure API handling"],
-    demoLink: "",
+    demoLink: "https://github.com/ragulhm/Mern-chat-bot_Gemini",
     codeLink: "https://github.com/ragulhm/Mern-chat-bot_Gemini",
   },
   {
@@ -51,7 +51,7 @@ const projects: Project[] = [
     description: "Personal AI assistant workflow using n8n to automate chat, email, and calendar management with Google Gemini integration.",
     technologies: ["n8n", "Gemini AI", "Gmail API", "Workflow Automation"],
     features: ["Chat automation", "Email management", "AI-driven replies", "Context memory"],
-    demoLink: "",
+    demoLink: "https://github.com/ragulhm/n8n-Personal-ai-workflow-",
     codeLink: "https://github.com/ragulhm/n8n-Personal-ai-workflow-",
   },
   {
