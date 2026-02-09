@@ -31,12 +31,12 @@ const projects: Project[] = [
     codeLink: "https://github.com/ragulhm/EDU-Planner-",
   },
   {
-    title: "MERN AI Chatbot",
-    description: "AI-powered chatbot using MERN stack integrated with Gemini API for natural language responses with a modern responsive interface.",
-    technologies: ["React", "Express.js", "MongoDB", "Gemini AI", "REST API"],
-    features: ["Natural language processing", "Real-time responses", "Clean chat interface", "Secure API handling"],
-    demoLink: "https://github.com/ragulhm/Mern-chat-bot_Gemini",
-    codeLink: "https://github.com/ragulhm/Mern-chat-bot_Gemini",
+    title: "Bot vs Human Tweet Classification– Transformer-Based NLP System",
+    description: " Built a transformer-based NLP system to classify social media tweets as bot or human usingBERT, RoBERTa, DistilBERT, and XLM-RoBERTa.",
+    technologies: ["React", "Python", "FastAPI", "HuggingFace Transformers",  "Kaggle (GPU)", "Google Colab", "Matplotlib", "Scikit-learn"],
+    features: ["Transformer-Based NLP", "Multi-Model Approach", "Real-Time Classification", "Comprehensive Evaluation"],
+    demoLink: "",
+    codeLink: "https://github.com/ragulhm/Fine-Tuned-Understanding-Enhancing-Social-Bot-Detection-",
   },
   {
     title: "Plant Analysis AI",
